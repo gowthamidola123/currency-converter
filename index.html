@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convertor</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="container">
+        <h1 class="title">Currency Converter</h1>
+        
+        <div class="form-group">
+            <label for="amount" class="label">Amount</label>
+            <input type="number" id="amount" placeholder="Enter amount" class="input"
+            value="100">
+        </div>
+        
+        <div class="form-group">
+            <label for="fromCurrency" class="label">From Currency</label>
+            <select id="fromCurrency" class="select">
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+                <option value="CAD">CAD</option>
+                <option value="AUD">AUD</option>   <!-- Australian Dollar -->
+                <option value="CNY">CNY</option>   <!-- Chinese Yuan -->
+                <option value="CHF">CHF</option>   <!-- Swiss Franc -->
+                <option value="SGD">SGD</option>   <!-- Singapore Dollar -->
+                <option value="NZD">NZD</option>   <!-- New Zealand Dollar -->
+                <option value="ZAR">ZAR</option>   <!-- South African Rand -->
+                <option value="AED">AED</option>   <!-- United Arab Emirates Dirham -->
+                <option value="SAR">SAR</option>   <!-- Saudi Riyal -->
+                <option value="SEK">SEK</option>   <!-- Swedish Krona -->
+                <option value="NOK">NOK</option>   <!-- Norwegian Krone -->
+                <option value="KRW">KRW</option>   <!-- South Korean Won -->
+                <option value="HKD">HKD</option>   <!-- Hong Kong Dollar -->
+                <option value="MXN">MXN</option>   <!-- Mexican Peso -->
+                <option value="THB">THB</option>   <!-- Thai Baht -->
+                <option value="MYR">MYR</option>   <!-- Malaysian Ringgit -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="toCurrency" class="label">To Currency</label>
+            <select id="toCurrency" class="select">
+                <option value="INR">INR</option>
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+                <option value="CAD">CAD</option>
+                <option value="AUD">AUD</option>   <!-- Australian Dollar -->
+                <option value="CNY">CNY</option>   <!-- Chinese Yuan -->
+                <option value="CHF">CHF</option>   <!-- Swiss Franc -->
+                <option value="SGD">SGD</option>   <!-- Singapore Dollar -->
+                <option value="NZD">NZD</option>   <!-- New Zealand Dollar -->
+                <option value="ZAR">ZAR</option>   <!-- South African Rand -->
+                <option value="AED">AED</option>   <!-- United Arab Emirates Dirham -->
+                <option value="SAR">SAR</option>   <!-- Saudi Riyal -->
+                <option value="SEK">SEK</option>   <!-- Swedish Krona -->
+                <option value="NOK">NOK</option>   <!-- Norwegian Krone -->
+                <option value="KRW">KRW</option>   <!-- South Korean Won -->
+                <option value="HKD">HKD</option>   <!-- Hong Kong Dollar -->
+                <option value="MXN">MXN</option>   <!-- Mexican Peso -->
+                <option value="THB">THB</option>   <!-- Thai Baht -->
+                <option value="MYR">MYR</option>   <!-- Malaysian Ringgit -->
+            </select>
+        </div>
+
+        <!-- Button -->
+         <button id="convertButton"
+         class="button">Convert</button>
+
+         <!-- Result Section -->
+         <div id="result"
+         class="result-container
+         success-message"></div>
+    </div>  
+    
+</body>
+</html>
